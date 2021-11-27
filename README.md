@@ -412,7 +412,219 @@ Testing pada Server Doriki Ke Server Fukurou
   ### CIDR Tree
   ![image](https://user-images.githubusercontent.com/55088939/143670669-3b419a0f-6484-42b8-9a5d-8d5ab78771b5.png)
 
-  ### Setting GNS3
+  ## Setting GNS3
+  Melakukan konfigurasi pada setiap router GNS3: 
+  
+  ### Foosha
+  ```
+  auto eth1
+iface eth1 inet dhcp
+
+auto eth0
+iface eth0 inet static
+	address 192.171.192.1
+	netmask 255.255.252.0
+
+auto eth3
+iface eth3 inet static
+	address 192.171.64.1
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 192.171.160.1
+	netmask 255.255.255.252
+  ```
+  
+  ### Water7
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.32.1
+	netmask 255.255.252.0
+	
+auto eth1
+iface eth1 inet static
+	address 192.171.64.2
+	netmask 255.255.255.252
+        gateway 192.171.64.1
+
+auto eth2
+iface eth2 inet static
+	address 192.171.16.1
+	netmask 255.255.255.252
+  ```
+  
+  ### PUCCI
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.16.2
+	netmask 255.255.255.252
+        gateway 192.171.16.1
+	
+auto eth1
+iface eth1 inet static
+	address 192.171.8.1
+	netmask 255.255.255.128
+
+
+auto eth2
+iface eth2 inet static
+	address 192.171.0.1
+	netmask 255.255.248.0
+  ```
+  
+  ### GUANHAO
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.160.2
+	netmask 255.255.255.252
+        gateway 192.171.160.1
+
+auto eth1
+iface eth1 inet static
+	address 192.171.148.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.171.144.1
+	netmask 255.255.254.0
+
+auto eth3
+iface eth3 inet static
+	address 192.171.136.1
+	netmask 255.255.255.252
+  ```
+  
+  ### ALABASTA
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.144.2
+	netmask 255.255.254.0
+        gateway 192.171.144.1
+
+auto eth1
+iface eth1 inet static
+	address 192.171.146.1
+	netmask 255.255.255.240
+  ```
+  
+  ### OIMO
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.136.2
+	netmask 255.255.255.252
+        gateway 192.171.136.1
+
+auto eth1
+iface eth1 inet static
+	address 192.171.132.1
+	netmask 255.255.255.0
+  ```
+  
+  ### SEASTONE
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.132.2
+	netmask 255.255.255.0
+        gateway 192.171.132.1
+
+auto eth1
+iface eth1 inet static
+	address 192.171.128.1
+	netmask 255.255.252.0
+  ```
+  
+  Kemudian juga melakukan konfigurasi pada setiap client di GNS3 : 
+  
+  ### BLUENO
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.192.2
+	netmask 255.255.252.0
+        gateway 192.171.192.1
+  ```
+  ### CHIPER
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.32.2
+	netmask 255.255.252.0
+        gateway 192.171.32.1
+  ```
+  ### JIPANGU
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.8.2
+	netmask 255.255.255.128
+        gateway 192.171.8.1
+  ```
+  ### COURTYARD
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.0.2
+	netmask 255.255.248.0
+        gateway 192.171.0.1
+  ```
+  ### CALMBELT
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.0.3
+	netmask 255.255.248.0
+        gateway 192.171.0.1
+  ```
+  ### ENIESLOBBY
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.132.3
+	netmask 255.255.255.0
+        gateway 192.171.132.1
+  ```
+  ### JABRA
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.148.2
+	netmask 255.255.252.0
+        gateway 192.171.148.1
+  ```
+  ### MAINGATE
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.144.2
+	netmask 255.255.254.0
+        gateway 192.171.144.1
+  ```
+  ### JORGE
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.146.2
+	netmask 255.255.255.240
+        gateway 192.171.146.1
+  ```
+  ### ELENA
+  ```
+  auto eth0
+iface eth0 inet static
+	address 192.171.128.2
+	netmask 255.255.252.0
+        gateway 192.171.128.1
+  ```
+  
+  
   
   ### Routing
   
