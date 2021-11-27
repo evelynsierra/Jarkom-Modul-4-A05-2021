@@ -22,6 +22,112 @@ Kelompok A5 :
   ![image](https://user-images.githubusercontent.com/55088939/143670342-2267dc07-27b3-4ccc-aac3-2667f20b02d1.png)
 
   ### Routing
+  #### Subnet A8
+  
+  Pada **Foosha** ke Blueno
+  ```
+ipv4 address 192.171.16.1
+netmask 255.255.252.0
+```
+Pada **Blueno** ke Foosha
+  ```
+ipv4 address 192.171.16.2
+netmask 255.255.252.0
+gateway 192.171.16.1
+  ```
+  
+  #### Subnet A5
+  
+  Pada **Foosha** ke Water7
+  ```
+ipv4 address 192.171.0.5
+netmask 255.255.255.252
+```
+Pada **Water7** ke Foosha
+  ```
+ipv4 address 192.171.0.6
+netmask 255.255.255.252
+  ```
+  Default Routing pada **Water7**
+  ```
+ip network 0.0.0.0
+mask 0.0.0.0
+next hop 192.171.0.5
+  ```
+  
+  #### Subnet A4
+  Pada **Water7** ke Cipher
+  ```
+ipv4 address 192.171.8.1
+netmask 255.255.252.0
+  ```
+  Pada **Cipher** ke Water7
+  ```
+ipv4 address 192.171.8.2
+netmask 255.255.252.0
+gateway 192.171.8.1
+```
+  Pada **Foosha** Static
+  ```
+ip network 192.171.8.0
+mask 255.255.252.0
+nexthop 192.171.0.6
+  ```
+  
+#### Subnet A3
+  Pada **Water7** ke Pucci
+  ```
+ipv4 address 192.171.0.1
+netmask 255.255.255.252
+```
+Pada **Pucci** ke Water7
+```
+ipv4 address 192.171.0.2
+netmask 255.255.255.252
+  ```
+  Default Routing pada **Water7**
+  ```
+ip network 0.0.0.0
+mask 0.0.0.0
+next hop 192.171.0.1
+```
+ Pada **Foosha** Static
+  ```
+ip network 192.171.0.0
+mask 255.255.255.252
+nexthop 192.171.0.6
+  ```
+  
+#### Subnet A1
+  Pada **Pucci** ke Jipangu
+  ```
+ipv4 address 192.171.0.129
+netmask 255.255.255.128
+```
+Pada **Jipangu** ke Pucci
+  ```
+ipv4 address 192.171.0.130
+netmask 255.255.255.128
+gateway 192.171.0.129
+```
+Pada **Water7** Static
+  ```
+ip network 192.171.0.128
+mask 255.255.255.128
+nexthop 192.171.0.2
+```
+Pada **Foosha** Static
+```
+ip network 192.171.0.128
+mask 255.255.255.128
+nexthop 192.171.0.6
+ ```
+  
+#### Subnet A2
+  
+  
+  
+  
   
  ## GNS3 - CIDR
   
