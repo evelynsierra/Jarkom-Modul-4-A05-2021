@@ -338,7 +338,17 @@ nexthop 192.171.0.10
   ```
   
 #### Server Doriki
-  Pada Foosha ke Doriki 
+Pada **Foosha** ke Doriki
+  ```
+  ipv4 address 192.171.71.33
+  netmask 255.255.255.240
+  ```
+Pada **Doriki** ke Foosha
+  ```
+  ipv4 address 192.171.71.34
+  netmask 255.255.255.240
+  gateway 192.171.71.33
+  ```
   
 #### Server Fukurou
 Pada **Oimo** ke Fukurou
@@ -346,7 +356,7 @@ Pada **Oimo** ke Fukurou
   ipv4 address 192.171.71.49
   netmask 255.255.255.240
   ```
-Pada **Fukurou** 
+Pada **Fukurou** ke Oimo
   ```
   ipv4 address 192.171.71.50
   netmask 255.255.255.240
@@ -371,6 +381,7 @@ Testing pada Client Cipher ke Client Blueno
   ![image](https://user-images.githubusercontent.com/80946219/143681049-5c995450-ddb3-4dcc-892b-a2a5f51d9f2d.png)
 
 Testing pada Server Doriki Ke Server Fukurou
+  
   ![image](https://user-images.githubusercontent.com/80946219/143681126-32d85e15-f080-4c0f-bd24-6b5752d0a4fc.png)
 
   
