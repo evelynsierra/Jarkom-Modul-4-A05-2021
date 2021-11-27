@@ -25,10 +25,31 @@ Kelompok A5 :
   
  ## GNS3 - CIDR
   
-  ### Pembagian submet
+  ### Pembagian subnet
+  Langkah 1
+  ![image](https://user-images.githubusercontent.com/55088939/143670551-33a69414-d7ea-433d-853c-e9479aa1c24f.png)
   
+  Langkah 2
+  ![image](https://user-images.githubusercontent.com/55088939/143670574-941bc620-42f1-4a7c-baa4-780c2452afb2.png)
+
+  Langkah 3
+  ![image](https://user-images.githubusercontent.com/55088939/143670579-904cdfd7-20af-4578-aae3-005582e6b30c.png)
+
+  Langkah 4
+  ![image](https://user-images.githubusercontent.com/55088939/143670586-55b61728-833e-4d9c-bb2e-2efa19b32bb2.png)
+
+  Langkah 5
+  ![image](https://user-images.githubusercontent.com/55088939/143670594-bfeb6363-95e5-4dcb-b00a-50494de1c6b9.png)
+
+  Langkah 6
+  ![image](https://user-images.githubusercontent.com/55088939/143670599-5f5e4499-f47e-4370-82fd-6e81ed4787cd.png)
+
+  Langkah 7
+  ![image](https://user-images.githubusercontent.com/55088939/143670661-6fc72859-443d-4789-9c4a-aa2816719c13.png)
+
   ### CIDR Tree
-  
+  ![image](https://user-images.githubusercontent.com/55088939/143670669-3b419a0f-6484-42b8-9a5d-8d5ab78771b5.png)
+
   ### Setting GNS3
   
   ### Routing
