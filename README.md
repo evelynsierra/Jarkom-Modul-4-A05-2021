@@ -124,10 +124,255 @@ nexthop 192.171.0.6
  ```
   
 #### Subnet A2
+Pada **Pucci** ke Calmbelt & Courtyard
+  ```
+ipv4 address 192.171.24.1
+netmask 255.255.248.0
+```
+Pada **Calmbelt** ke Pucci
+  ```
+ipv4 address 192.171.24.2
+netmask 255.255.248.0
+gateway 192.171.24.1
+```
+Pada **Courtyard** ke Pucci
+  ```
+ipv4 address 192.171.24.3
+netmask 255.255.248.0
+gateway 192.171.24.1
+```
+Pada **Water7** Static
+  ```
+ip network 192.171.24.0
+mask 255.255.248.0
+nexthop 192.171.0.2
+```
+Pada **Foosha** Static
+  ```
+ip network 192.171.24.0
+mask 255.255.248.0
+nexthop 192.171.0.6
+  ```
   
+#### Subnet A9
+Pada **Foosha** ke Guanhao
+  ```
+ipv4 address 192.171.0.9
+netmask 255.255.255.252
+```
+Pada **Guanhao** ke Foosha
+  ```
+ipv4 address 192.171.0.10
+netmask 255.255.255.252
+```
+Default Routing pada **Guanhao**
+  ```
+ip network 0.0.0.0
+mask 0.0.0.0
+nexthop 192.171.0.9
+```
   
+#### Subnet A6
+Pada **Guanhao** ke Jabra
+  ```
+ipv4 address 192.171.12.1
+netmask 255.255.252.0
+```
+Pada **Jabra** ke Guanhao
+  ```
+ipv4 address 192.171.12.2
+netmask 255.255.252.0
+gateway 192.171.12.1
+```
+Pada **Foosha** Static
+  ```
+ip network 192.171.12.0
+mask 255.255.252.0
+nexthop 192.171.0.10
+  ```
   
+#### Subnet A12
+Pada **Guanhao** ke Maingate & Alabasta
+  ```
+ipv4 address 192.171.2.1
+netmask 255.255.254.0
+```
+Pada **Maingate** ke Guanhao
+  ```
+ipv4 address 192.171.2.2
+netmask 255.255.254.0
+gateway 192.171.2.1
+```
+Pada **Alabasta** ke Guanhao 
+  ```
+ipv4 address 192.171.2.3
+netmask 255.255.254.0
+```
+Default Route pada **Alabasta**
+  ```
+ip network 0.0.0.0
+mask 0.0.0.0
+nexthop 192.171.2.1 
+```
+Pada **Foosha** Static
+  ```
+ip network 192.171.2.0
+mask 255.255.254.0
+nexthop 192.171.0.10
+  ```
   
+#### Subnet A13
+Pada **Alabasta** ke Jorge
+  ```
+ipv4 address 192.171.0.17
+netmask 255.255.255.240
+```
+Pada **Jorge** ke Alabasta
+  ```
+ipv4 address 192.171.0.18
+netmask 255.255.255.240
+gateway 192.171.0.17
+```
+Pada **Guanhao** Static
+  ```
+net 192.171.0.16
+mask 255.255.255.240
+nexthop 192.171.2.3
+```
+Pada **Foosha** Static
+  ```
+net 192.171.0.16
+mask 255.255.255.240
+nexthop 192.171.0.10 
+ ```
+  
+#### Subnet A10
+Pada **Guanhao** ke Oimo
+  ```
+ipv4 address 192.171.0.13
+netmask 255.255.255.252
+```
+Pada **Oimo** ke Guanhao
+  ```
+ipv4 address 192.171.0.14
+netmask 255.255.255.252
+```
+Default Routing pada **Oimo**
+  ```
+ip network 0.0.0.0
+mask 0.0.0.0
+nexthop 192.171.0.13
+```
+Pada **Foosha** Static
+  ```
+ip network 192.171.0.12
+mask 255.255.255.252
+nexthop 192.171.0.10
+  ```
+ 
+#### Subnet A7
+Pada **Oimo** ke Enieslobby & Seastone 
+  ```
+ipv4 address 192.171.1.1
+netmask 255.255.255.0
+```
+Pada **Enieslobby** ke Oimo
+  ```
+ipv4 address 192.171.1.2
+netmask 255.255.255.0
+gateway 192.171.1.1
+  ```
+Pada **Guanhao** Static
+  ```
+ip network 192.171.1.0
+mask 255.255.255.0
+nexthop 192.171.0.14
+```
+Pada **Foosha** Static
+  ```
+ip network 192.171.1.0
+mask 255.255.255.0
+nexthop 192.171.0.10
+```
+Pada **Seastone** ke Oimo
+  ```
+ipv4 address 192.171.1.3
+netmask 255.255.255.0
+```
+Default Routing pada **Seastone**
+  ```
+ip network 0.0.0.0
+mask 0.0.0.0
+nexthop 192.171.1.1 
+  ```
+
+#### Subnet A11
+Pada **Seastone** ke Elena
+  ```
+ipv4 address 192.171.20.1
+netmask 255.255.252.0
+```
+Pada **Elena** ke Seastone
+```
+ipv4 address 192.171.20.2
+mask 255.255.252.0
+gateway 192.171.20.1
+```
+Pada **Oimo** Static
+  ```
+ip network 192.171.20.0
+mask 255.255.252.0
+nexthop 192.171.1.3
+```
+Pada **Guanhao** Static
+  ```
+ip network 192.171.20.0
+mask 255.255.252.0
+nexthop 192.171.0.14
+```
+Pada **Foosha** Static
+  ```
+ip network 192.171.20.0
+mask 255.255.252.0
+nexthop 192.171.0.10
+  ```
+  
+#### Server Doriki
+  Pada Foosha ke Doriki 
+  
+#### Server Fukurou
+Pada **Oimo** ke Fukurou
+  ```
+  ipv4 address 192.171.71.49
+  netmask 255.255.255.240
+  ```
+Pada **Fukurou** 
+  ```
+  ipv4 address 192.171.71.50
+  netmask 255.255.255.240
+  gateway 192.171.71.49
+  ```
+Pada **Guanhao** Static
+  ```
+  ipv4 address 192.171.71.48
+  netmask 255.255.255.240
+  gateway 192.171.0.14
+  ```
+Pada **Foosha** Static
+  ```
+  ipv4 address 192.171.71.48
+  netmask 255.255.255.240
+  gateway 192.171.0.10
+  ```
+  
+Testing pada Client Cipher ke Client Blueno
+  
+  ![image](https://user-images.githubusercontent.com/80946219/143681035-0f7829e4-4b7e-4070-bc22-f1fdd75dd854.png)
+  ![image](https://user-images.githubusercontent.com/80946219/143681049-5c995450-ddb3-4dcc-892b-a2a5f51d9f2d.png)
+
+Testing pada Server Doriki Ke Server Fukurou
+  ![image](https://user-images.githubusercontent.com/80946219/143681126-32d85e15-f080-4c0f-bd24-6b5752d0a4fc.png)
+
   
  ## GNS3 - CIDR
   
